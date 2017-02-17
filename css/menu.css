@@ -1,13 +1,18 @@
+nav {
+    width: 100%;
+    overflow-x: auto;
+    padding: 1rem 0;
+}
+
 .nav-flex {
     display: flex;
     align-items: center;
     flex-direction: row;
-    overflow: auto;
-    white-space: nowrap;
-    overflow-y: hidden;
     overflow-x: auto;
     -ms-overflow-style: none;
     -webkit-overflow-scrolling: touch;
+    width: 150%;
+    white-space: nowrap;
 }
 
 .nav-logo-icon {
@@ -19,12 +24,18 @@
 .nav-left {
     order: 2;
     display: flex;
+    justify-content: space-between;
+    width: 45%;
+    margin-left: 2rem;
 }
 
 .nav-right {
     order: 3;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    width: 45%;
+    margin-left: 2rem;
 }
 
 .nav-show-large {
@@ -36,6 +47,10 @@
 }
 
 @media only screen and (min-width:35.625em) {
+    
+    .nav-flex {
+        width: 100%;
+    }
     
     .nav-logo {
         order: 2;
