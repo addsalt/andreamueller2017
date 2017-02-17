@@ -19,25 +19,26 @@
 	
 	<!-- Navigation -->
     
-    <nav class="custom-menu-wrapper">
-          <div class="pure-menu custom-menu custom-menu-top">
-              <a href="#" class="pure-menu-heading custom-menu-brand">Andrea Mueller</a>
-              <a href="#" class="custom-menu-toggle" id="toggle"><s class="bar"></s><s class="bar"></s></a>
-          </div>
-          <div class="pure-menu pure-menu-horizontal pure-menu-scrollable custom-menu custom-menu-bottom custom-menu-tucked" id="tuckedMenu">
-              <div class="custom-menu-screen"></div>
-              <ul class="pure-menu-list">
-                  <li class="pure-menu-item"><a href="#" class="pure-menu-link">About</a></li>
-                  <li class="pure-menu-item"><a href="#" class="pure-menu-link">Collections</a></li>
-                  <li class="pure-menu-item"><a href="#" class="pure-menu-link">FAQ</a></li>
-                  <li class="pure-menu-item"><a href="#" class="pure-menu-link">Blog</a></li>
-                  <li class="pure-menu-item"><a href="#" class="pure-menu-link">Contact</a></li>
-                  <li class="pure-menu-item"><a href="#" class="pure-menu-link">Facebook</a></li>
-                  <li class="pure-menu-item"><a href="#" class="pure-menu-link">Twitter</a></li>
-                  <li class="pure-menu-item"><a href="#" class="pure-menu-link">Instagram</a></li>
-              </ul>
-          </div>
-      </nav>
+    <nav>
+        <ul class="nav-flex">
+            <li class="nav-logo nav-show-large nav-logo-large"><a href="#"><img class="flex-img" src="/images/andrea-mueller-logo.png">Andrea Mueller Fine Jewellery</a></li>
+            <li><a href="#" class="nav-show-small nav-logo-icon"><img class=" flex-img" src="/images/andrea-mueller-logo-icon.png">Andrea Mueller Fine Jewellery</a></li>
+            <li class="nav-left">
+                <a href="#">About</a>
+                <a href="#">Collections</a>
+                <a href="#">FAQ</a>
+            </li>
+            <li class="nav-right">
+                <a href="#">Blog</a>
+                <a href="#">Contact</a>
+                <ul class="social media">
+                    <li class="sm-icon"><a href="#" class="pure-menu-link facebook">Facebook</a></li>
+                    <li class="sm-icon"><a href="#" class="pure-menu-link twitter">Twitter</a></li>
+                    <li class="sm-icon"><a href="#" class="pure-menu-link instagram">Instagram</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
     
     <!-- Masthead -->
     
@@ -52,7 +53,7 @@
         
         <!-- About Andrea -->
         <section id="about">
-            <img src="/images/andrea-mueller-jeweller.png">
+            <div class="profile-image"><img class="flex-img" src="/images/andrea-profile-2.jpg"></div>
             <h2 class="cuatro subtitle">A bit about Andrea</h2>
             <p class="vendetta">Andrea’s approach to jewellery is inspired by nature. She works to simplify natural objects and shapes by pairing them down to their most basic elements. Andrea designs and creates her jewellery in Ottawa at her downtown studio space at The Rectory Art House.</p>
             <a class="button" href="#">How I Work</a>
@@ -98,7 +99,7 @@
         </section>
         
         <!-- Blockquote -->
-        <section class="blockquote-wrapper">
+        <section class="blockquote-wrapper background-fixed">
             <img class="flex-img show-large" src="images/am-frame-cropped.png">
             <img class="flex-img show-small" src="images/am-frame-cropped-small.png">
             <blockquote>
@@ -111,7 +112,7 @@
         <!-- Collections -->
         <section id="collections">
             <h2>Collections</h2>
-            <ul>
+            <ul class="flex-items">
                 <li>
                     <a class="purple" href="#">
                         <span>
@@ -181,17 +182,23 @@
         </section>
         
         <!-- Calls to Action -->
-        <section>
-            <a href="#">
-                <p>More Insight?</p>
-                <p>Read my blog</p>
-            </a>
-            <a href="#">
-                <p>More Insight?</p>
-                <p>Read my blog</p>
-            </a>
-            <div>
-                <p>Ready to create something beautiful?</p>
+        <section class="ctas">
+            <ul class="ctas-small">
+                <li>
+                    <a class="transition" href="#">
+                        <p class="cuatro subtitle transition">More Insight?</p>
+                        <p class="uno vendetta">Read my blog</p>
+                    </a>
+                </li>
+                <li>
+                    <a class="transition" href="#">
+                        <p class="cuatro subtitle transition">Behind the Scenes</p>
+                        <p class="uno vendetta">Follow my feed</p>
+                    </a>
+                </li>
+            </ul>
+            <div class="big-cta">
+                <p class="dos vendetta">Ready to create something beautiful?</p>
                 <a class="button" href="#">Let's Connect</a>
             </div>
         </section>
@@ -201,7 +208,7 @@
         
         <!-- Footer -->
         <footer>
-            <ul>
+            <ul class="flex-items">
                 <li>
                     <h3>Inquiries</h3>
                     <a href="#">jewellery@andreamueller.com</a>
@@ -219,10 +226,10 @@
                     <a href="#">jewellery@andreamueller.com</a>
                 </li>
             </ul>
-            <ul>
-                <li><a href="#" class="">Facebook</a></li>
-                <li><a href="#" class="">Twitter</a></li>
-                <li><a href="#" class="">Instagram</a></li>
+            <ul class="flex-items">
+                <li class="sm-icon"><a href="#" class="facebook">Facebook</a></li>
+                <li class="sm-icon"><a href="#" class="twitter">Twitter</a></li>
+                <li class="sm-icon"><a href="#" class="instagram">Instagram</a></li>
             </ul>
             <p>© Andrea Mueller 2017 · All rights reserved</p>
         </footer>
