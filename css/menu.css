@@ -1,24 +1,8 @@
-nav {
-    width: 100%;
-    overflow-x: auto;
-    padding: 1rem 0;
-    overflow-x: auto;
-    overflow-y: hidden;
-    -ms-overflow-style: none;
-    -webkit-overflow-scrolling: touch;
-    white-space: nowrap;
-}
-
 .nav-flex {
     display: flex;
     align-items: center;
     flex-direction: row;
-    overflow-x: auto;
-    overflow-y: hidden;
-    -ms-overflow-style: none;
-    -webkit-overflow-scrolling: touch;
-    width: 150%;
-    white-space: nowrap;
+    flex-flow: wrap;
 }
 
 .nav-logo-icon {
@@ -27,21 +11,33 @@ nav {
     overflow: hidden;
 }
 
+.nav-top-row {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.social-media-small {
+    display: flex;
+    width: 85px;
+    justify-content: space-between;
+}
+
 .nav-left {
     order: 2;
     display: flex;
+    flex-grow: 1;
     justify-content: space-between;
-    width: 45%;
-    margin-left: 2rem;
+    margin-right: 10%;
 }
 
 .nav-right {
     order: 3;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 45%;
-    margin-left: 2rem;
+    flex-grow: 1;
+    justify-content: space-between
 }
 
 .nav-show-large {
@@ -49,10 +45,14 @@ nav {
 }
 
 .nav-show-small {
-    display: block;
+    display: flex;
 }
 
-@media only screen and (min-width:35.625em) {
+.social-media {
+    align-self: flex-end;
+}
+
+@media only screen and (min-width:45em) {
     
     .nav-flex {
         width: 100%;
@@ -66,37 +66,48 @@ nav {
         order: 1;
         justify-content: space-between;
         flex-grow: 1;
+        margin-right: 0;
     }
 
     .nav-right {
         order: 3;
         justify-content: space-between;
         flex-grow: 1;
+        align-items: center;
     }
     
     .nav-show-large {
-        display: block;
-        margin: 1em 5% 0.25em;
-        width: 150px;
-        height: 56px;
-        overflow: hidden;
+        display: flex;
     }
     
     .nav-show-small {
         display: none;
     }
+    
+    .nav-logo-large {
+        margin: 1em 5% 0.25em;
+        width: 150px;
+        height: 57px;
+        overflow: hidden;
+    }
+    
+    .social-media {
+        display: flex;
+        justify-content: space-between;
+        flex-grow: .1;
+    }
 }
 
 
-@media only screen and (min-width:45.625em) {
+@media only screen and (min-width:61em) {
     
     .nav-logo-large {
         width: 220px;
-        height: 84px;
+        height: 83px;
     }
     
     .nav-logo {
-        margin: 1em 15% 0.25em;
+        margin: 1em 10% 0.25em;
     }
 
 }
