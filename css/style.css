@@ -96,6 +96,8 @@ h4, small, .cuatro {font-size: .65625em;} /* 10.5pt */
 
 /* COMMON ELEMENTS */
 
+a {color: #505275;}
+
 .background-fixed {
     background-size: cover;
     background-position: center center;
@@ -735,4 +737,15 @@ footer img {max-width: 46px; padding-bottom: 1.5rem;}
 
 #blog-post main img {
     margin-bottom: 2.5rem;
+}
+
+/* FAQ */
+
+#faq .question-section {
+    max-width: 35rem;
+    margin: 0 auto;
+}
+
+#faq .question-section li {
+    margin-bottom: 3.5rem;
 }
