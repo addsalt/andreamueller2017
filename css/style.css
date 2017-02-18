@@ -710,7 +710,8 @@ footer img {max-width: 46px; padding-bottom: 1.5rem;}
 /* ----------------- BLOG POST ----------------- */
 
 #blog-post .masthead {
-    padding: 6rem 25% 8rem;
+    padding: 3rem 25% 12rem;
+    background-color: #fafafa;
 }
 
 #blog-post .masthead h1 {
@@ -718,7 +719,7 @@ footer img {max-width: 46px; padding-bottom: 1.5rem;}
 }
 
 #blog-post main {
-    margin-top: -4rem;
+    margin-top: -9rem;
     background-color: transparent;
     max-width: 40rem;
     padding-bottom: 2.5rem;
