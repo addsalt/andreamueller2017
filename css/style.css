@@ -110,8 +110,8 @@ h4, small, .cuatro {font-size: .65625em;} /* 10.5pt */
 
 .sm-icon {
     display: inline-block;
-    width: 25px;
-    height: 25px;
+    width: 26px;
+    height: 26px;
     overflow: hidden;
     text-indent: 60px;
 }
@@ -123,7 +123,10 @@ h4, small, .cuatro {font-size: .65625em;} /* 10.5pt */
     background-size: 25px;
     background-repeat: no-repeat;
     background-position: center center;
+    opacity: 1;
 }
+
+.sm-icon a:hover{opacity: .65;}
 
 .sm-icon a.facebook {
     background-image: url(http://www.justaddsalt.ca/andreamueller2017/images/facebook-icon.png);
@@ -169,6 +172,7 @@ section {margin: 100px 0;}
 
 .pink {color: #e8bfb1;}
 .purple {color: #505275;}
+.white {color: white;}
 
 /* ELEMENTS */
 
@@ -463,10 +467,11 @@ ul {
     color: #505275;
     position: relative;
     background-color: white;
+    transition-duration: 0.5s;
 }
 
 .ctas .ctas-small li a:hover {
-    background-color: rgba(232,191,177,.7);
+    background-color: rgba(232,191,177,.65);
 }
 
 .ctas .ctas-small a:hover .subtitle {
@@ -479,10 +484,10 @@ ul {
 }
 
 .transition {
-    transition: all 0.25s cubic-bezier(.46,0,.59,1);
-    -webkit-transition:all 0.25s cubic-bezier(.46,0,.59,1);
-    -o-transition:all 0.25s cubic-bezier(.46,0,.59,1);
-    -moz-transition:all 0.25s cubic-bezier(.46,0,.59,1);
+    transition: all 0.25s cubic-bezier(.5243,.54,.98);
+    -webkit-transition:all 0.25s cubic-bezier(.5243,.54,.98);
+    -o-transition:all 0.25s cubic-bezier(.5243,.54,.98);
+    -moz-transition:all 0.25s cubic-bezier(.5243,.54,.98);
 }
 
 .big-cta {
@@ -559,7 +564,7 @@ ul {
 
 footer {
     background-color: #a3a5c0;
-    padding: 11% 5% 7.5%;
+    padding: 7em 5% 6em;
     margin-top: -3em;
     position: relative;
     z-index: 1;
@@ -567,7 +572,13 @@ footer {
     box-shadow: 0px 0px 147px rgba(64,80,38,.25);
 }
 
-.footer-social-media {margin: 2em auto .5em; width: 20rem}
+footer img {max-width: 46px; padding-bottom: 1.5rem;}
+
+.footer-social-media {margin: 2em auto .5em; width: 20rem;}
+
+.footer-social-media .sm-icon a{opacity: .5;}
+
+.footer-social-media .sm-icon a:hover{opacity: 1}
 
 .footer-social-media .sm-icon a.facebook {
     background-image: url(http://www.justaddsalt.ca/andreamueller2017/images/facebook-icon-white.png);
