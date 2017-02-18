@@ -3,6 +3,7 @@
 *, *:after, *:before, html, body {
     margin: 0;
     padding: 0;
+    
     -webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
@@ -38,9 +39,8 @@ main {
 }
 
 .flex-item{
-    justify-content: center;
-    flex:1;
-    box-sizing: border-box;
+    -webkit-justify-content: center;
+    justify-content: center;    
 }
 
 .flex-img {
@@ -50,6 +50,7 @@ main {
 }
 
 .flex-row {
+    -webkit-flex-flow: row;
     flex-flow: row;
 }
 
@@ -153,9 +154,19 @@ section {margin: 100px 0;}
 /* FLEX STACKING */
 
 .flex-items {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
+    
+    -webkit-flex-direction: column;
     flex-direction: column;
+    
+    -webkit-flex-flow: wrap;
     flex-flow: wrap;
+    
+    -webkit-justify-content: center;
     justify-content: center;
 }
 
@@ -216,6 +227,8 @@ blockquote {
 
 .flipped {
     -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 
 blockquote p {
@@ -228,13 +241,16 @@ blockquote p:before {
     content: '';
     height: 35px;
     width: 55px;
+    
     background-image: url(http://www.justaddsalt.ca/andreamueller2017/images/am-ornament.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
+    
     position: absolute;
     left: 50%;
     top: -3em;
+    
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
 }
@@ -244,8 +260,8 @@ blockquote p:before {
     text-transform: uppercase;
     letter-spacing: .16em;
     font-family: "proxima-nova-condensed", sans-serif;
-    color: #e8bfb1;
     text-decoration: none;
+    color: #e8bfb1;
 }
 
 nav ul li a {
@@ -258,12 +274,13 @@ nav ul li a {
 }
 
 .button {
-    padding: .6em .875em .475em;
-    border: solid .0875rem #e8bfb1;
-    text-decoration: none;
-    display: inline-block;
-    margin-top: 3.2rem;
     background-color: transparent;
+    border: solid .0875rem #e8bfb1;
+    padding: .6em .875em .475em;
+    margin-top: 3.2rem;
+    display: inline-block;
+    text-decoration: none;
+    
     transition:all 0.25s cubic-bezier(.46,0,.59,1);
     -webkit-transition:all 0.4s cubic-bezier(.46,0,.59,1);
     -o-transition:all 0.4s cubic-bezier(.46,0,.59,1);
@@ -279,12 +296,13 @@ ul {
     list-style-type: none;
 }
 
-/* Masthead */
+/* MASTHEAD */
 
 .masthead {
     overflow: auto;
     padding: 12% 25%;
     margin: 1rem 0;
+    
     background-image: url(http://www.justaddsalt.ca/andreamueller2017/images/am-masthead-1.jpg);
     background-position: center bottom;
     background-size: cover;
@@ -330,9 +348,19 @@ ul {
 }
 
 #process ul {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
+    
+    -webkit-flex-direction: row;
     flex-direction: row;
+    
+    -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
+    
+    -webkit-justify-content: center;
     justify-content: center;
 }
 
@@ -351,6 +379,7 @@ ul {
 @media only screen and (min-width: 24rem){
     #process ul {
         flex-direction: row;
+        -webkit-flex-direction: row;
     }
     
     #process ul li {
@@ -368,14 +397,29 @@ ul {
 /* COLLECTIONS */
 
 #collections ul {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
+    
+    -webkit-flex-direction: row;
     flex-direction: row;
+    
+    -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
+    
+    -webkit-justify-content: center;
     justify-content: center;
 }
 
 #collections ul li {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
+    
     align-items: stretch;
     margin-bottom: 2.85%;
     width: 45%;
@@ -387,8 +431,10 @@ ul {
     background-position: center top;
     background-repeat: no-repeat;
     background-image: url(http://www.justaddsalt.ca/andreamueller2017/images/collection-1.jpg);
+    
     border: solid .0875rem #e7e8ed;
     border-radius: .0625em;
+    
     transition:all 0.5s ;
     -webkit-transition:all 0.5s ;
     -o-transition:all 0.5s ;
@@ -397,10 +443,13 @@ ul {
 
 #collections ul li a {
     width: 100%;
+    
     padding-bottom: 1rem;
-    text-decoration: none;
-    position: relative;
     padding-top: 108%;
+    
+    text-decoration: none;
+    
+    position: relative;
     z-index: 100;
 }
 
@@ -409,12 +458,14 @@ ul {
 }
 
 #collections ul li a span {
-    position: absolute;
     width: 100%;
+    
+    position: absolute;
     left: 0;
     right: 0;
-    padding-bottom: .8em;
     bottom: 0;
+    
+    padding-bottom: .8em;
 }
 
 @media only screen and (min-width: 45rem){
@@ -444,9 +495,19 @@ ul {
 @media only screen and (min-width:45em){.ctas {margin-bottom: 1.325em}}
 
 .ctas .ctas-small {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
+    
+    -webkit-flex-direction: column;
     flex-direction: column;
+    
+    -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
+    
+    -webkit-align-content: center;
     align-content: center;
 }
 
@@ -491,13 +552,25 @@ ul {
 }
 
 .big-cta {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
+    
+    -webkit-flex-direction: column;
     flex-direction: column;
+    
+    -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
+    
+    -webkit-align-items: center;
     align-items: center;
+    
     width: 100%;
     margin: 1.25% auto;
     padding: 8% 5% 7.5%;
+    
     background-image: url(http://www.justaddsalt.ca/andreamueller2017/images/am-big-cta-1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -536,40 +609,50 @@ ul {
 /* GALLERY */
 
 #gallery {
+    background-color: white;
     position: relative;
     z-index: 2;
     padding: 0 .5em .0475em;
     margin: 0;
-    background-color: white;
 }
 
 .gallery-row {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
+    
+    -webkit-justify-content: space-between;
     justify-content: space-between;
+    
     margin: .5em 0;
 }
 
 .gallery-row div:nth-child(2) {margin: 0 .5em;}
 
 @media only screen and (min-width: 45em){
+    
     #gallery {padding: 0 1.4em .15em;}
 
     .gallery-row {margin: 1.4em 0;}
 
     .gallery-row div:nth-child(2) {margin: 0 1.4em;}
+    
 }
 
 
 /* FOOTER */
 
 footer {
-    background-color: #a3a5c0;
-    padding: 7em 5% 6em;
-    margin-top: -3em;
+    overflow: auto;
     position: relative;
     z-index: 1;
-    overflow: auto;
+    
+    background-color: #a3a5c0;
     box-shadow: 0px 0px 147px rgba(64,80,38,.25);
+    padding: 7em 5% 6em;
+    margin-top: -3em;
 }
 
 footer img {max-width: 46px; padding-bottom: 1.5rem;}
