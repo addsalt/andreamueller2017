@@ -31,7 +31,7 @@ html {
     overflow-x: hidden;
 }
 
-main {
+main, nav {
     max-width: 58.125em;
     margin: 0 auto;
     display: block;
