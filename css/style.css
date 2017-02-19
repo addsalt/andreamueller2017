@@ -915,10 +915,25 @@ footer img, .ornament {max-width: 46px; padding-bottom: 1.5rem;}
 }
 
 .collection-grid figure {
-    width: 19%;
+    width: 48%;
     margin: .5%;
     position: relative;
     overflow: hidden;
+}
+
+@media only screen and (min-width: 35em) {
+    .collection-grid figure {
+        width: 32%;
+}
+    
+@media only screen and (min-width: 45em) {
+    .collection-grid figure {
+        width: 23%;
+}
+
+@media only screen and (min-width: 60em) {
+    .collection-grid figure {
+        width: 19%;
 }
 
 .collection-grid figure figcaption {
